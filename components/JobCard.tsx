@@ -37,11 +37,11 @@ const JobCard: FunctionComponent<{ job: IJob }> = ({
           <h1 className="text-xl font-bold font-opensans ">{jobTitle}</h1>
 
           <div
-            className={`flex items-center mt-2 ${
+            className={`flex items-center ${
               monthlySalaryLower === undefined ||
               monthlySalaryUpper === undefined
                 ? "invisible"
-                : ""
+                : "mt-2"
             }`}
           >
             <h3 className="mb-1 font-light text-md font-opensans">
